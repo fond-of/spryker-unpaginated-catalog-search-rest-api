@@ -2,6 +2,8 @@
 
 namespace FondOfSpryker\Glue\UnpaginatedCatalogSearchRestApi\Dependency\Client;
 
+use Spryker\Client\GlossaryStorage\GlossaryStorageClientInterface;
+
 class UnpaginatedCatalogSearchRestApiToGlossaryStorageClientBridge implements UnpaginatedCatalogSearchRestApiToGlossaryStorageClientInterface
 {
     /**
@@ -12,7 +14,7 @@ class UnpaginatedCatalogSearchRestApiToGlossaryStorageClientBridge implements Un
     /**
      * @param \Spryker\Client\GlossaryStorage\GlossaryStorageClientInterface $glossaryStorageClient
      */
-    public function __construct($glossaryStorageClient)
+    public function __construct(GlossaryStorageClientInterface $glossaryStorageClient)
     {
         $this->glossaryStorageClient = $glossaryStorageClient;
     }

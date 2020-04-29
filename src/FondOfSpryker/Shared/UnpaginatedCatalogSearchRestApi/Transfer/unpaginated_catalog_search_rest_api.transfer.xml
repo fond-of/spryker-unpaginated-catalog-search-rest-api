@@ -74,4 +74,11 @@
         <property name="parameterName" type="string" />
         <property name="isMultiValued" type="bool" />
     </transfer>
+
+    <transfer name="RestCatalogSearchSort">
+        <property name="sortParamNames" type="array"/>
+        <property name="sortParamLocalizedNames" type="array"/>
+        <property name="currentSortParam" type="string"/>
+        <property name="currentSortOrder" type="string"/>
+    </transfer>
 </transfers>
