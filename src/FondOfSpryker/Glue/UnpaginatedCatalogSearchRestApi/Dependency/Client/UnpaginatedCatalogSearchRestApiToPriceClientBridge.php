@@ -2,6 +2,8 @@
 
 namespace FondOfSpryker\Glue\UnpaginatedCatalogSearchRestApi\Dependency\Client;
 
+use Spryker\Client\Price\PriceClientInterface;
+
 class UnpaginatedCatalogSearchRestApiToPriceClientBridge implements UnpaginatedCatalogSearchRestApiToPriceClientInterface
 {
     /**
@@ -12,7 +14,7 @@ class UnpaginatedCatalogSearchRestApiToPriceClientBridge implements UnpaginatedC
     /**
      * @param \Spryker\Client\Price\PriceClientInterface $priceClient
      */
-    public function __construct($priceClient)
+    public function __construct(PriceClientInterface $priceClient)
     {
         $this->priceClient = $priceClient;
     }

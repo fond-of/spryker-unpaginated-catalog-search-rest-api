@@ -2,6 +2,8 @@
 
 namespace FondOfSpryker\Glue\UnpaginatedCatalogSearchRestApi\Dependency\Client;
 
+use Spryker\Client\Catalog\CatalogClientInterface;
+
 class UnpaginatedCatalogSearchRestApiToCatalogClientBridge implements UnpaginatedCatalogSearchRestApiToCatalogClientInterface
 {
     /**
@@ -12,7 +14,7 @@ class UnpaginatedCatalogSearchRestApiToCatalogClientBridge implements Unpaginate
     /**
      * @param \Spryker\Client\Catalog\CatalogClientInterface $catalogClient
      */
-    public function __construct($catalogClient)
+    public function __construct(CatalogClientInterface $catalogClient)
     {
         $this->catalogClient = $catalogClient;
     }
